@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Little Meet 💕</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 360px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      color: #ff5c8a;
+      font-size: 26px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .join-btn {
+      background: linear-gradient(135deg, #ff5c8a, #ff85a2);
+      color: white;
+      border: none;
+      padding: 14px 40px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 20px rgba(255, 92, 138, 0.4);
+      margin-top: 10px;
+    }
+
+    .join-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 25px rgba(255, 92, 138, 0.5);
+    }
+
+    .heart {
+      font-size: 22px;
+      margin-top: 20px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Mansi 🌸</h1>
+
+    <p>Let’s steal a little time together</p>
+
+    <p>
+      Hey Mansi 🙂<br>
+      This guy is here to steal a little bit of your time 😄 Whenever you’re free, you know where to find me.<br>
+      I’ve shared a small link for the call, feel free to join whenever it suits you.
+    </p>
+
+    <button
+      class="join-btn"
+      onclick="window.open('https://meet.google.com/nnk-mmis-pwj', '_blank')">
+      Join 💌
+    </button>
+
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
